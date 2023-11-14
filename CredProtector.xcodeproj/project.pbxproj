@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0976D72B00D53600A3E47F /* MVVM_SwiftUI_KarinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D62B00D53600A3E47F /* MVVM_SwiftUI_KarinApp.swift */; };
-		CE0976D92B00D53600A3E47F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D82B00D53600A3E47F /* ContentView.swift */; };
+		CE0976D72B00D53600A3E47F /* CredProtector_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D62B00D53600A3E47F /* CredProtector_App.swift */; };
+		CE0976D92B00D53600A3E47F /* CredsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D82B00D53600A3E47F /* CredsView.swift */; };
 		CE0976DB2B00D53800A3E47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DA2B00D53800A3E47F /* Assets.xcassets */; };
 		CE0976DE2B00D53800A3E47F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */; };
+		CEB459302B03B20800F17335 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4592F2B03B20800F17335 /* Credential.swift */; };
+		CEB459322B03B29300F17335 /* CredsListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB459312B03B29300F17335 /* CredsListManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0976D32B00D53600A3E47F /* MVVM SwiftUI Karin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM SwiftUI Karin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE0976D62B00D53600A3E47F /* MVVM_SwiftUI_KarinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_SwiftUI_KarinApp.swift; sourceTree = "<group>"; };
-		CE0976D82B00D53600A3E47F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE0976D32B00D53600A3E47F /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0976D62B00D53600A3E47F /* CredProtector_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtector_App.swift; sourceTree = "<group>"; };
+		CE0976D82B00D53600A3E47F /* CredsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsView.swift; sourceTree = "<group>"; };
 		CE0976DA2B00D53800A3E47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEB4592F2B03B20800F17335 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		CEB459312B03B29300F17335 /* CredsListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsListManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		CE0976CA2B00D53600A3E47F = {
 			isa = PBXGroup;
 			children = (
-				CE0976D52B00D53600A3E47F /* MVVM SwiftUI Karin */,
+				CE0976D52B00D53600A3E47F /* CredProtector */,
 				CE0976D42B00D53600A3E47F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		CE0976D42B00D53600A3E47F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE0976D32B00D53600A3E47F /* MVVM SwiftUI Karin.app */,
+				CE0976D32B00D53600A3E47F /* CredProtector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE0976D52B00D53600A3E47F /* MVVM SwiftUI Karin */ = {
+		CE0976D52B00D53600A3E47F /* CredProtector */ = {
 			isa = PBXGroup;
 			children = (
-				CE0976D62B00D53600A3E47F /* MVVM_SwiftUI_KarinApp.swift */,
-				CE0976D82B00D53600A3E47F /* ContentView.swift */,
+				CE0976D62B00D53600A3E47F /* CredProtector_App.swift */,
+				CEB4592B2B03AFCF00F17335 /* Model */,
+				CEB4592D2B03AFDE00F17335 /* View */,
+				CEB4592E2B03AFE400F17335 /* ViewModels */,
 				CE0976DA2B00D53800A3E47F /* Assets.xcassets */,
 				CE0976DC2B00D53800A3E47F /* Preview Content */,
 			);
-			path = "MVVM SwiftUI Karin";
+			path = CredProtector;
 			sourceTree = "<group>";
 		};
 		CE0976DC2B00D53800A3E47F /* Preview Content */ = {
@@ -67,12 +73,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CEB4592B2B03AFCF00F17335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4592F2B03B20800F17335 /* Credential.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB4592D2B03AFDE00F17335 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0976D82B00D53600A3E47F /* CredsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB4592E2B03AFE400F17335 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEB459312B03B29300F17335 /* CredsListManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE0976D22B00D53600A3E47F /* MVVM SwiftUI Karin */ = {
+		CE0976D22B00D53600A3E47F /* CredProtector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE0976E12B00D53800A3E47F /* Build configuration list for PBXNativeTarget "MVVM SwiftUI Karin" */;
+			buildConfigurationList = CE0976E12B00D53800A3E47F /* Build configuration list for PBXNativeTarget "CredProtector" */;
 			buildPhases = (
 				CE0976CF2B00D53600A3E47F /* Sources */,
 				CE0976D02B00D53600A3E47F /* Frameworks */,
@@ -82,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM SwiftUI Karin";
+			name = CredProtector;
 			productName = "MVVM SwiftUI Karin";
-			productReference = CE0976D32B00D53600A3E47F /* MVVM SwiftUI Karin.app */;
+			productReference = CE0976D32B00D53600A3E47F /* CredProtector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE0976CE2B00D53600A3E47F /* Build configuration list for PBXProject "MVVM SwiftUI Karin" */;
+			buildConfigurationList = CE0976CE2B00D53600A3E47F /* Build configuration list for PBXProject "CredProtector" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE0976D22B00D53600A3E47F /* MVVM SwiftUI Karin */,
+				CE0976D22B00D53600A3E47F /* CredProtector */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0976D92B00D53600A3E47F /* ContentView.swift in Sources */,
-				CE0976D72B00D53600A3E47F /* MVVM_SwiftUI_KarinApp.swift in Sources */,
+				CE0976D92B00D53600A3E47F /* CredsView.swift in Sources */,
+				CEB459322B03B29300F17335 /* CredsListManager.swift in Sources */,
+				CEB459302B03B20800F17335 /* Credential.swift in Sources */,
+				CE0976D72B00D53600A3E47F /* CredProtector_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVM SwiftUI Karin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVM SwiftUI Karin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE0976CE2B00D53600A3E47F /* Build configuration list for PBXProject "MVVM SwiftUI Karin" */ = {
+		CE0976CE2B00D53600A3E47F /* Build configuration list for PBXProject "CredProtector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE0976DF2B00D53800A3E47F /* Debug */,
@@ -329,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE0976E12B00D53800A3E47F /* Build configuration list for PBXNativeTarget "MVVM SwiftUI Karin" */ = {
+		CE0976E12B00D53800A3E47F /* Build configuration list for PBXNativeTarget "CredProtector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE0976E22B00D53800A3E47F /* Debug */,
