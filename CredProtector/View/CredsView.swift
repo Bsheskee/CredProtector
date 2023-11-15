@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Secrets
 
 struct CredsView: View {
     @ObservedObject var credsManager: CredsManager
+//    let manager = SecretsManager(key: "12345")
     
     var body: some View {
         NavigationView {
@@ -31,7 +33,13 @@ struct CredsView: View {
                 if credsManager.creds.count == 0 {
                     Text("Start by adding your credentials")
                         .foregroundColor(.gray)
+                        .padding(.bottom, 100)
                 }
+//                if let secret = manager.readSecret() {
+//                    Text("The secret is: \(secret)")
+//                } else {
+//                    Text("Failed to read secret")
+//                }
             }
             .navigationTitle("Credentials")
             .toolbar {
@@ -45,14 +53,7 @@ struct CredsView: View {
                 }
             }
         }
-        
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+//        UITabBar()
     }
 }
 

@@ -11,6 +11,9 @@
 		CE0976D92B00D53600A3E47F /* CredsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D82B00D53600A3E47F /* CredsView.swift */; };
 		CE0976DB2B00D53800A3E47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DA2B00D53800A3E47F /* Assets.xcassets */; };
 		CE0976DE2B00D53800A3E47F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */; };
+		CE267EC22B05723A00944119 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; };
+		CE267EC42B05728400944119 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; };
+		CE267EC52B05728400944119 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEB459302B03B20800F17335 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4592F2B03B20800F17335 /* Credential.swift */; };
 		CEB459322B03B29300F17335 /* CredsListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB459312B03B29300F17335 /* CredsListManager.swift */; };
 		CEB4593A2B03CD3500F17335 /* CredProtectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB459392B03CD3500F17335 /* CredProtectorTests.swift */; };
@@ -26,12 +29,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE267EC02B056C7900944119 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE267EC52B05728400944119 /* Secrets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CE0976D32B00D53600A3E47F /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0976D62B00D53600A3E47F /* CredProtector_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtector_App.swift; sourceTree = "<group>"; };
 		CE0976D82B00D53600A3E47F /* CredsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsView.swift; sourceTree = "<group>"; };
 		CE0976DA2B00D53800A3E47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE267EC12B05723A00944119 /* Secrets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Secrets.framework; sourceTree = "<group>"; };
 		CEB4592F2B03B20800F17335 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		CEB459312B03B29300F17335 /* CredsListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsListManager.swift; sourceTree = "<group>"; };
 		CEB459372B03CD3500F17335 /* CredProtectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE267EC42B05728400944119 /* Secrets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE267EC22B05723A00944119 /* Secrets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +79,11 @@
 		CE0976CA2B00D53600A3E47F = {
 			isa = PBXGroup;
 			children = (
+				CE267EC12B05723A00944119 /* Secrets.framework */,
 				CE0976D52B00D53600A3E47F /* CredProtector */,
 				CEB459382B03CD3500F17335 /* CredProtectorTests */,
 				CE0976D42B00D53600A3E47F /* Products */,
+				CE267EC32B05728400944119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +115,13 @@
 				CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE267EC32B05728400944119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CEB4592B2B03AFCF00F17335 /* Model */ = {
@@ -137,6 +166,7 @@
 				CE0976CF2B00D53600A3E47F /* Sources */,
 				CE0976D02B00D53600A3E47F /* Frameworks */,
 				CE0976D12B00D53600A3E47F /* Resources */,
+				CE267EC02B056C7900944119 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,9 +404,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content Secrets.framework";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -403,9 +437,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content Secrets.framework";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -432,6 +470,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CredProtectorTests",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -454,6 +496,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CredProtectorTests",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
