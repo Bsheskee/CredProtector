@@ -10,7 +10,7 @@ import Secrets
 
 struct CredsView: View {
     @ObservedObject var credsManager: CredsManager
-//    let manager = SecretsManager(key: "12345")
+    let manager = SecretsManager(key: "12345")
     
     var body: some View {
         NavigationView {
@@ -35,11 +35,11 @@ struct CredsView: View {
                         .foregroundColor(.gray)
                         .padding(.bottom, 100)
                 }
-//                if let secret = manager.readSecret() {
-//                    Text("The secret is: \(secret)")
-//                } else {
-//                    Text("Failed to read secret")
-//                }
+                if let secret = manager.readSecret() {
+                    Text("The secret is: \(secret)")
+                } else {
+                    Text("Failed to read secret")
+                }
             }
             .navigationTitle("Credentials")
             .toolbar {
