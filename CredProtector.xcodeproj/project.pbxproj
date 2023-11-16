@@ -11,15 +11,22 @@
 		CE0976D92B00D53600A3E47F /* CredsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0976D82B00D53600A3E47F /* CredsView.swift */; };
 		CE0976DB2B00D53800A3E47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DA2B00D53800A3E47F /* Assets.xcassets */; };
 		CE0976DE2B00D53800A3E47F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */; };
-		CE267EC22B05723A00944119 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; };
-		CE267EC42B05728400944119 /* Secrets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; };
-		CE267EC52B05728400944119 /* Secrets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE267EC12B05723A00944119 /* Secrets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE0F3E072B067529005F9C14 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F3E032B067528005F9C14 /* PasswordManager.swift */; };
+		CE0F3E082B06753C005F9C14 /* PasswordManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0F3E062B067528005F9C14 /* PasswordManager.framework */; };
+		CE0F3E092B06755E005F9C14 /* PasswordManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE0F3E062B067528005F9C14 /* PasswordManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEB459302B03B20800F17335 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4592F2B03B20800F17335 /* Credential.swift */; };
 		CEB459322B03B29300F17335 /* CredsListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB459312B03B29300F17335 /* CredsListManager.swift */; };
 		CEB4593A2B03CD3500F17335 /* CredProtectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB459392B03CD3500F17335 /* CredProtectorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE0F3E052B067528005F9C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0F3E002B067528005F9C14 /* PasswordManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE0F3DA52B0660A1005F9C14;
+			remoteInfo = PasswordManager;
+		};
 		CEB4593B2B03CD3500F17335 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE0976CB2B00D53600A3E47F /* Project object */;
@@ -36,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE267EC52B05728400944119 /* Secrets.framework in Embed Frameworks */,
+				CE0F3E092B06755E005F9C14 /* PasswordManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +56,9 @@
 		CE0976D82B00D53600A3E47F /* CredsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsView.swift; sourceTree = "<group>"; };
 		CE0976DA2B00D53800A3E47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0976DD2B00D53800A3E47F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CE267EC12B05723A00944119 /* Secrets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Secrets.framework; sourceTree = "<group>"; };
+		CE0F3DFF2B067528005F9C14 /* PasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordManager.h; sourceTree = "<group>"; };
+		CE0F3E002B067528005F9C14 /* PasswordManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PasswordManager.xcodeproj; sourceTree = "<group>"; };
+		CE0F3E032B067528005F9C14 /* PasswordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		CEB4592F2B03B20800F17335 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		CEB459312B03B29300F17335 /* CredsListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsListManager.swift; sourceTree = "<group>"; };
 		CEB459372B03CD3500F17335 /* CredProtectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE267EC42B05728400944119 /* Secrets.framework in Frameworks */,
+				CE0F3E082B06753C005F9C14 /* PasswordManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE267EC22B05723A00944119 /* Secrets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +87,6 @@
 		CE0976CA2B00D53600A3E47F = {
 			isa = PBXGroup;
 			children = (
-				CE267EC12B05723A00944119 /* Secrets.framework */,
 				CE0976D52B00D53600A3E47F /* CredProtector */,
 				CEB459382B03CD3500F17335 /* CredProtectorTests */,
 				CE0976D42B00D53600A3E47F /* Products */,
@@ -117,9 +124,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE0F3DFD2B067528005F9C14 /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F3DFE2B067528005F9C14 /* PasswordManager */,
+				CE0F3E002B067528005F9C14 /* PasswordManager.xcodeproj */,
+				CE0F3E032B067528005F9C14 /* PasswordManager.swift */,
+			);
+			path = PasswordManager;
+			sourceTree = "<group>";
+		};
+		CE0F3DFE2B067528005F9C14 /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F3DFF2B067528005F9C14 /* PasswordManager.h */,
+			);
+			path = PasswordManager;
+			sourceTree = "<group>";
+		};
+		CE0F3E012B067528005F9C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F3E062B067528005F9C14 /* PasswordManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CE267EC32B05728400944119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE0F3DFD2B067528005F9C14 /* PasswordManager */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +259,12 @@
 			mainGroup = CE0976CA2B00D53600A3E47F;
 			productRefGroup = CE0976D42B00D53600A3E47F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE0F3E012B067528005F9C14 /* Products */;
+					ProjectRef = CE0F3E002B067528005F9C14 /* PasswordManager.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CE0976D22B00D53600A3E47F /* CredProtector */,
@@ -232,6 +272,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE0F3E062B067528005F9C14 /* PasswordManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PasswordManager.framework;
+			remoteRef = CE0F3E052B067528005F9C14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CE0976D12B00D53600A3E47F /* Resources */ = {
@@ -261,6 +311,7 @@
 				CEB459322B03B29300F17335 /* CredsListManager.swift in Sources */,
 				CEB459302B03B20800F17335 /* Credential.swift in Sources */,
 				CE0976D72B00D53600A3E47F /* CredProtector_App.swift in Sources */,
+				CE0F3E072B067529005F9C14 /* PasswordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content Secrets.framework";
+				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content Secrets.framework";
+				DEVELOPMENT_ASSET_PATHS = "CredProtector/Preview\\ Content";
 				DEVELOPMENT_TEAM = RHRJPVLH9S;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (

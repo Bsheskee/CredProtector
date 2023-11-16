@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-import Secrets
+import PasswordManager
 
 struct CredsView: View {
     @ObservedObject var credsManager: CredsManager
-    let manager = SecretsManager(key: "12345")
+    let manager = PasswordManager(key: "12345")
     
     var body: some View {
         NavigationView {
@@ -35,7 +35,7 @@ struct CredsView: View {
                         .foregroundColor(.gray)
                         .padding(.bottom, 100)
                 }
-                if let secret = manager.readSecret() {
+                if let secret = manager.readPassword() {
                     Text("The secret is: \(secret)")
                 } else {
                     Text("Failed to read secret")
