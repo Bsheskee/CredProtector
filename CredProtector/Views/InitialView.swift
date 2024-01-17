@@ -15,7 +15,12 @@ struct InitialView: View {
     var body: some View {
         VStack {
             if let category = categories.first {
-                Text(category.title)
+                CredsListView(category: category)
+            } else {
+                ProgressView()
+                    .onAppear {
+                        $categories.append(CredCategory())
+                    }
             }
         }
         .padding()

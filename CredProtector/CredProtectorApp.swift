@@ -11,6 +11,7 @@ import SwiftUI
 struct CredProtectorApp: App {
     var body: some Scene {
         WindowGroup {
+            let _ = print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
             InitialView()
         }
     }

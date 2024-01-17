@@ -22,6 +22,8 @@
 		CEEF11022B585BDC0034A850 /* CredentialRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11012B585BDC0034A850 /* CredentialRow.swift */; };
 		CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11032B585C0D0034A850 /* CredDetailView.swift */; };
 		CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11062B5860890034A850 /* CategoryFilterView.swift */; };
+		CEEF11092B5864930034A850 /* AddCredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11082B5864930034A850 /* AddCredView.swift */; };
+		CEEF110B2B5865140034A850 /* CategoryCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF110A2B5865140034A850 /* CategoryCRUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		CEEF11012B585BDC0034A850 /* CredentialRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialRow.swift; sourceTree = "<group>"; };
 		CEEF11032B585C0D0034A850 /* CredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredDetailView.swift; sourceTree = "<group>"; };
 		CEEF11062B5860890034A850 /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
+		CEEF11082B5864930034A850 /* AddCredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCredView.swift; sourceTree = "<group>"; };
+		CEEF110A2B5865140034A850 /* CategoryCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCRUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 			children = (
 				CEEF10FA2B5855F10034A850 /* Credential.swift */,
 				CEEF10FC2B5856270034A850 /* CredCategory.swift */,
+				CEEF110A2B5865140034A850 /* CategoryCRUD.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				CEEF11012B585BDC0034A850 /* CredentialRow.swift */,
 				CEEF11032B585C0D0034A850 /* CredDetailView.swift */,
 				CEEF11062B5860890034A850 /* CategoryFilterView.swift */,
+				CEEF11082B5864930034A850 /* AddCredView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,12 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF11092B5864930034A850 /* AddCredView.swift in Sources */,
 				CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */,
 				CEEF11022B585BDC0034A850 /* CredentialRow.swift in Sources */,
 				CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */,
 				CEEF10FB2B5855F10034A850 /* Credential.swift in Sources */,
 				CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */,
 				CEEF11002B5859CC0034A850 /* CredsListView.swift in Sources */,
+				CEEF110B2B5865140034A850 /* CategoryCRUD.swift in Sources */,
 				CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */,
 				CEEF10FD2B5856270034A850 /* CredCategory.swift in Sources */,
 			);
