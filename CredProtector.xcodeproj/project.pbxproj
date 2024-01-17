@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */; };
+		CEEF10CE2B58551F0034A850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CD2B58551F0034A850 /* ContentView.swift */; };
+		CEEF10D02B5855210034A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10CF2B5855210034A850 /* Assets.xcassets */; };
+		CEEF10D32B5855210034A850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10D22B5855210034A850 /* Preview Assets.xcassets */; };
+		CEEF10DD2B5855210034A850 /* CredProtectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10DC2B5855210034A850 /* CredProtectorTests.swift */; };
+		CEEF10E72B5855210034A850 /* CredProtectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10E62B5855210034A850 /* CredProtectorUITests.swift */; };
+		CEEF10E92B5855210034A850 /* CredProtectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10E82B5855210034A850 /* CredProtectorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEF10D92B5855210034A850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF10C02B58551F0034A850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF10C72B58551F0034A850;
+			remoteInfo = CredProtector;
+		};
+		CEEF10E32B5855210034A850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF10C02B58551F0034A850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF10C72B58551F0034A850;
+			remoteInfo = CredProtector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEF10C82B58551F0034A850 /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorApp.swift; sourceTree = "<group>"; };
+		CEEF10CD2B58551F0034A850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEEF10CF2B5855210034A850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEF10D22B5855210034A850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEF10D82B5855210034A850 /* CredProtectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF10DC2B5855210034A850 /* CredProtectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorTests.swift; sourceTree = "<group>"; };
+		CEEF10E22B5855210034A850 /* CredProtectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF10E62B5855210034A850 /* CredProtectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorUITests.swift; sourceTree = "<group>"; };
+		CEEF10E82B5855210034A850 /* CredProtectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEF10C52B58551F0034A850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10D52B5855210034A850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10DF2B5855210034A850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEF10BF2B58551F0034A850 = {
+			isa = PBXGroup;
+			children = (
+				CEEF10CA2B58551F0034A850 /* CredProtector */,
+				CEEF10DB2B5855210034A850 /* CredProtectorTests */,
+				CEEF10E52B5855210034A850 /* CredProtectorUITests */,
+				CEEF10C92B58551F0034A850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEF10C92B58551F0034A850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10C82B58551F0034A850 /* CredProtector.app */,
+				CEEF10D82B5855210034A850 /* CredProtectorTests.xctest */,
+				CEEF10E22B5855210034A850 /* CredProtectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEF10CA2B58551F0034A850 /* CredProtector */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */,
+				CEEF10CD2B58551F0034A850 /* ContentView.swift */,
+				CEEF10CF2B5855210034A850 /* Assets.xcassets */,
+				CEEF10D12B5855210034A850 /* Preview Content */,
+			);
+			path = CredProtector;
+			sourceTree = "<group>";
+		};
+		CEEF10D12B5855210034A850 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10D22B5855210034A850 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEEF10DB2B5855210034A850 /* CredProtectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10DC2B5855210034A850 /* CredProtectorTests.swift */,
+			);
+			path = CredProtectorTests;
+			sourceTree = "<group>";
+		};
+		CEEF10E52B5855210034A850 /* CredProtectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10E62B5855210034A850 /* CredProtectorUITests.swift */,
+				CEEF10E82B5855210034A850 /* CredProtectorUITestsLaunchTests.swift */,
+			);
+			path = CredProtectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEF10C72B58551F0034A850 /* CredProtector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF10EC2B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtector" */;
+			buildPhases = (
+				CEEF10C42B58551F0034A850 /* Sources */,
+				CEEF10C52B58551F0034A850 /* Frameworks */,
+				CEEF10C62B58551F0034A850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CredProtector;
+			productName = CredProtector;
+			productReference = CEEF10C82B58551F0034A850 /* CredProtector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEF10D72B5855210034A850 /* CredProtectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF10EF2B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtectorTests" */;
+			buildPhases = (
+				CEEF10D42B5855210034A850 /* Sources */,
+				CEEF10D52B5855210034A850 /* Frameworks */,
+				CEEF10D62B5855210034A850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF10DA2B5855210034A850 /* PBXTargetDependency */,
+			);
+			name = CredProtectorTests;
+			productName = CredProtectorTests;
+			productReference = CEEF10D82B5855210034A850 /* CredProtectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEF10E12B5855210034A850 /* CredProtectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF10F22B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtectorUITests" */;
+			buildPhases = (
+				CEEF10DE2B5855210034A850 /* Sources */,
+				CEEF10DF2B5855210034A850 /* Frameworks */,
+				CEEF10E02B5855210034A850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF10E42B5855210034A850 /* PBXTargetDependency */,
+			);
+			name = CredProtectorUITests;
+			productName = CredProtectorUITests;
+			productReference = CEEF10E22B5855210034A850 /* CredProtectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEF10C02B58551F0034A850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CEEF10C72B58551F0034A850 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CEEF10D72B5855210034A850 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEEF10C72B58551F0034A850;
+					};
+					CEEF10E12B5855210034A850 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEEF10C72B58551F0034A850;
+					};
+				};
+			};
+			buildConfigurationList = CEEF10C32B58551F0034A850 /* Build configuration list for PBXProject "CredProtector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEF10BF2B58551F0034A850;
+			productRefGroup = CEEF10C92B58551F0034A850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEF10C72B58551F0034A850 /* CredProtector */,
+				CEEF10D72B5855210034A850 /* CredProtectorTests */,
+				CEEF10E12B5855210034A850 /* CredProtectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEF10C62B58551F0034A850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF10D32B5855210034A850 /* Preview Assets.xcassets in Resources */,
+				CEEF10D02B5855210034A850 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10D62B5855210034A850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10E02B5855210034A850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEF10C42B58551F0034A850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF10CE2B58551F0034A850 /* ContentView.swift in Sources */,
+				CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10D42B5855210034A850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF10DD2B5855210034A850 /* CredProtectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF10DE2B5855210034A850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF10E72B5855210034A850 /* CredProtectorUITests.swift in Sources */,
+				CEEF10E92B5855210034A850 /* CredProtectorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEF10DA2B5855210034A850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF10C72B58551F0034A850 /* CredProtector */;
+			targetProxy = CEEF10D92B5855210034A850 /* PBXContainerItemProxy */;
+		};
+		CEEF10E42B5855210034A850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF10C72B58551F0034A850 /* CredProtector */;
+			targetProxy = CEEF10E32B5855210034A850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEEF10EA2B5855210034A850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEF10EB2B5855210034A850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEF10ED2B5855210034A850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEF10EE2B5855210034A850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CredProtector/Preview Content\"";
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEF10F02B5855210034A850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CredProtector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CredProtector";
+			};
+			name = Debug;
+		};
+		CEEF10F12B5855210034A850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CredProtector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CredProtector";
+			};
+			name = Release;
+		};
+		CEEF10F32B5855210034A850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CredProtector;
+			};
+			name = Debug;
+		};
+		CEEF10F42B5855210034A850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHRJPVLH9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsheskee.CredProtectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CredProtector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEF10C32B58551F0034A850 /* Build configuration list for PBXProject "CredProtector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF10EA2B5855210034A850 /* Debug */,
+				CEEF10EB2B5855210034A850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF10EC2B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF10ED2B5855210034A850 /* Debug */,
+				CEEF10EE2B5855210034A850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF10EF2B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF10F02B5855210034A850 /* Debug */,
+				CEEF10F12B5855210034A850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF10F22B5855210034A850 /* Build configuration list for PBXNativeTarget "CredProtectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF10F32B5855210034A850 /* Debug */,
+				CEEF10F42B5855210034A850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEF10C02B58551F0034A850 /* Project object */;
+}
