@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */; };
-		CEEF10CE2B58551F0034A850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CD2B58551F0034A850 /* ContentView.swift */; };
+		CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CD2B58551F0034A850 /* InitialView.swift */; };
 		CEEF10D02B5855210034A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10CF2B5855210034A850 /* Assets.xcassets */; };
 		CEEF10D32B5855210034A850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10D22B5855210034A850 /* Preview Assets.xcassets */; };
 		CEEF10DD2B5855210034A850 /* CredProtectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10DC2B5855210034A850 /* CredProtectorTests.swift */; };
 		CEEF10E72B5855210034A850 /* CredProtectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10E62B5855210034A850 /* CredProtectorUITests.swift */; };
 		CEEF10E92B5855210034A850 /* CredProtectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10E82B5855210034A850 /* CredProtectorUITestsLaunchTests.swift */; };
+		CEEF10F72B5855BC0034A850 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CEEF10F62B5855BC0034A850 /* Realm */; };
+		CEEF10F92B5855BC0034A850 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEEF10F82B5855BC0034A850 /* RealmSwift */; };
+		CEEF10FB2B5855F10034A850 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10FA2B5855F10034A850 /* Credential.swift */; };
+		CEEF10FD2B5856270034A850 /* CredCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10FC2B5856270034A850 /* CredCategory.swift */; };
+		CEEF11002B5859CC0034A850 /* CredsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10FF2B5859CC0034A850 /* CredsListView.swift */; };
+		CEEF11022B585BDC0034A850 /* CredentialRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11012B585BDC0034A850 /* CredentialRow.swift */; };
+		CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11032B585C0D0034A850 /* CredDetailView.swift */; };
+		CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11062B5860890034A850 /* CategoryFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		CEEF10C82B58551F0034A850 /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorApp.swift; sourceTree = "<group>"; };
-		CEEF10CD2B58551F0034A850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEEF10CD2B58551F0034A850 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		CEEF10CF2B5855210034A850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEF10D22B5855210034A850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEF10D82B5855210034A850 /* CredProtectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,12 @@
 		CEEF10E22B5855210034A850 /* CredProtectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredProtectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF10E62B5855210034A850 /* CredProtectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorUITests.swift; sourceTree = "<group>"; };
 		CEEF10E82B5855210034A850 /* CredProtectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEF10FA2B5855F10034A850 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		CEEF10FC2B5856270034A850 /* CredCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredCategory.swift; sourceTree = "<group>"; };
+		CEEF10FF2B5859CC0034A850 /* CredsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredsListView.swift; sourceTree = "<group>"; };
+		CEEF11012B585BDC0034A850 /* CredentialRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialRow.swift; sourceTree = "<group>"; };
+		CEEF11032B585C0D0034A850 /* CredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredDetailView.swift; sourceTree = "<group>"; };
+		CEEF11062B5860890034A850 /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF10F92B5855BC0034A850 /* RealmSwift in Frameworks */,
+				CEEF10F72B5855BC0034A850 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */,
-				CEEF10CD2B58551F0034A850 /* ContentView.swift */,
+				CEEF11052B5860350034A850 /* Views */,
 				CEEF10CF2B5855210034A850 /* Assets.xcassets */,
 				CEEF10D12B5855210034A850 /* Preview Content */,
+				CEEF10FE2B58595B0034A850 /* Models */,
 			);
 			path = CredProtector;
 			sourceTree = "<group>";
@@ -127,6 +144,27 @@
 			path = CredProtectorUITests;
 			sourceTree = "<group>";
 		};
+		CEEF10FE2B58595B0034A850 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10FA2B5855F10034A850 /* Credential.swift */,
+				CEEF10FC2B5856270034A850 /* CredCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEEF11052B5860350034A850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF10CD2B58551F0034A850 /* InitialView.swift */,
+				CEEF10FF2B5859CC0034A850 /* CredsListView.swift */,
+				CEEF11012B585BDC0034A850 /* CredentialRow.swift */,
+				CEEF11032B585C0D0034A850 /* CredDetailView.swift */,
+				CEEF11062B5860890034A850 /* CategoryFilterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +181,10 @@
 			dependencies = (
 			);
 			name = CredProtector;
+			packageProductDependencies = (
+				CEEF10F62B5855BC0034A850 /* Realm */,
+				CEEF10F82B5855BC0034A850 /* RealmSwift */,
+			);
 			productName = CredProtector;
 			productReference = CEEF10C82B58551F0034A850 /* CredProtector.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +257,9 @@
 				Base,
 			);
 			mainGroup = CEEF10BF2B58551F0034A850;
+			packageReferences = (
+				CEEF10F52B5855BC0034A850 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = CEEF10C92B58551F0034A850 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEF10CE2B58551F0034A850 /* ContentView.swift in Sources */,
+				CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */,
+				CEEF11022B585BDC0034A850 /* CredentialRow.swift in Sources */,
+				CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */,
+				CEEF10FB2B5855F10034A850 /* Credential.swift in Sources */,
+				CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */,
+				CEEF11002B5859CC0034A850 /* CredsListView.swift in Sources */,
 				CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */,
+				CEEF10FD2B5856270034A850 /* CredCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +634,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEF10F52B5855BC0034A850 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEF10F62B5855BC0034A850 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEF10F52B5855BC0034A850 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		CEEF10F82B5855BC0034A850 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEF10F52B5855BC0034A850 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEEF10C02B58551F0034A850 /* Project object */;
 }
