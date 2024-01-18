@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE814AB42B590DB100C02D2F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE814AB32B590DB100C02D2F /* RealmManager.swift */; };
 		CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */; };
 		CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CD2B58551F0034A850 /* InitialView.swift */; };
 		CEEF10D02B5855210034A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10CF2B5855210034A850 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE814AB32B590DB100C02D2F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		CEEF10C82B58551F0034A850 /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorApp.swift; sourceTree = "<group>"; };
 		CEEF10CD2B58551F0034A850 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				CEEF10FA2B5855F10034A850 /* Credential.swift */,
 				CEEF10FC2B5856270034A850 /* CredCategory.swift */,
 				CEEF110A2B5865140034A850 /* CategoryCRUD.swift */,
+				CE814AB32B590DB100C02D2F /* RealmManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				CEEF11092B5864930034A850 /* AddCredView.swift in Sources */,
 				CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */,
+				CE814AB42B590DB100C02D2F /* RealmManager.swift in Sources */,
 				CEEF11022B585BDC0034A850 /* CredentialRow.swift in Sources */,
 				CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */,
 				CEEF10FB2B5855F10034A850 /* Credential.swift in Sources */,

@@ -18,6 +18,7 @@ struct AddCredView: View {
     @ObservedResults(CredCategory.self, sortDescriptor: SortDescriptor(keyPath: "title")) var categories
     @ObservedRealmObject var category: CredCategory
     
+    
     var body: some View {
         NavigationStack {
             
@@ -36,11 +37,18 @@ struct AddCredView: View {
                 Section {
                     TextField("New group", text: $categoryTextField)
                         .accessibilityIdentifier("credGroup")
-        
+                    
                     Button {
-                        //tutaj: zacznij od nowa, od najbanalniejszych sposobów zapisu tego gówna
- 
-                        dismiss()
+                        do {
+                            let realm = try Realm()
+                            try realm.write {
+                                let realmManager = RealmManager()
+                                realmManager.saveCredential(categoryTextField: categoryTextField, name: name, login: login, password: password, category: category, realm: realm)
+                            }
+                            dismiss()
+                        } catch {
+                            print("Error saving data to Realm: \(error)")
+                        }
                     } label: {
                         Text("Save")
                             .frame(maxWidth: .infinity, maxHeight: 30)
@@ -50,7 +58,7 @@ struct AddCredView: View {
                 }
             }
             VStack {
-//                LazyGrid(selectedCategory: $selectedCategory, categories: $categories)
+                //                LazyGrid(selectedCategory: $selectedCategory, categories: $categories)
                 
             }
             .navigationTitle("New credential")
