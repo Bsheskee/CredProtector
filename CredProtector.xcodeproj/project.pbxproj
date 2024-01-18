@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE814AB42B590DB100C02D2F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE814AB32B590DB100C02D2F /* RealmManager.swift */; };
+		CE814AB82B59183D00C02D2F /* LazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE814AB72B59183D00C02D2F /* LazyGrid.swift */; };
 		CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */; };
 		CEEF10CE2B58551F0034A850 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF10CD2B58551F0034A850 /* InitialView.swift */; };
 		CEEF10D02B5855210034A850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF10CF2B5855210034A850 /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11032B585C0D0034A850 /* CredDetailView.swift */; };
 		CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11062B5860890034A850 /* CategoryFilterView.swift */; };
 		CEEF11092B5864930034A850 /* AddCredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF11082B5864930034A850 /* AddCredView.swift */; };
-		CEEF110B2B5865140034A850 /* CategoryCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF110A2B5865140034A850 /* CategoryCRUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		CE814AB32B590DB100C02D2F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		CE814AB72B59183D00C02D2F /* LazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGrid.swift; sourceTree = "<group>"; };
 		CEEF10C82B58551F0034A850 /* CredProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CredProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredProtectorApp.swift; sourceTree = "<group>"; };
 		CEEF10CD2B58551F0034A850 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		CEEF11032B585C0D0034A850 /* CredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredDetailView.swift; sourceTree = "<group>"; };
 		CEEF11062B5860890034A850 /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
 		CEEF11082B5864930034A850 /* AddCredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCredView.swift; sourceTree = "<group>"; };
-		CEEF110A2B5865140034A850 /* CategoryCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCRUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,6 @@
 			children = (
 				CEEF10FA2B5855F10034A850 /* Credential.swift */,
 				CEEF10FC2B5856270034A850 /* CredCategory.swift */,
-				CEEF110A2B5865140034A850 /* CategoryCRUD.swift */,
 				CE814AB32B590DB100C02D2F /* RealmManager.swift */,
 			);
 			path = Models;
@@ -170,6 +169,7 @@
 				CEEF11032B585C0D0034A850 /* CredDetailView.swift */,
 				CEEF11062B5860890034A850 /* CategoryFilterView.swift */,
 				CEEF11082B5864930034A850 /* AddCredView.swift */,
+				CE814AB72B59183D00C02D2F /* LazyGrid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,8 +318,8 @@
 				CEEF11072B5860890034A850 /* CategoryFilterView.swift in Sources */,
 				CEEF10FB2B5855F10034A850 /* Credential.swift in Sources */,
 				CEEF11042B585C0D0034A850 /* CredDetailView.swift in Sources */,
+				CE814AB82B59183D00C02D2F /* LazyGrid.swift in Sources */,
 				CEEF11002B5859CC0034A850 /* CredsListView.swift in Sources */,
-				CEEF110B2B5865140034A850 /* CategoryCRUD.swift in Sources */,
 				CEEF10CC2B58551F0034A850 /* CredProtectorApp.swift in Sources */,
 				CEEF10FD2B5856270034A850 /* CredCategory.swift in Sources */,
 			);

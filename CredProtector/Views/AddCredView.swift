@@ -35,9 +35,9 @@ struct AddCredView: View {
                         .accessibilityIdentifier("credPassword")
                 }
                 Section {
+                    LazyGrid(selectedCategory: $selectedCategory, categories: $categories)
                     TextField("New group", text: $categoryTextField)
                         .accessibilityIdentifier("credGroup")
-                    
                     Button {
                         do {
                             let realm = try Realm()
@@ -55,11 +55,8 @@ struct AddCredView: View {
                     }
                     .disabled(name.isEmpty && login.isEmpty && password.isEmpty)
                     .accessibility(identifier: "saveTapped")
+
                 }
-            }
-            VStack {
-                //                LazyGrid(selectedCategory: $selectedCategory, categories: $categories)
-                
             }
             .navigationTitle("New credential")
         }
