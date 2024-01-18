@@ -10,7 +10,7 @@ import RealmSwift
 
 class CredCategory: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var title: String = "All"
+    @Persisted var title: String
     
     @Persisted var credentials = RealmSwift.List<Credential>()
 

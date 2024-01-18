@@ -119,8 +119,8 @@
 				CEEF10CB2B58551F0034A850 /* CredProtectorApp.swift */,
 				CEEF11052B5860350034A850 /* Views */,
 				CEEF10CF2B5855210034A850 /* Assets.xcassets */,
-				CEEF10D12B5855210034A850 /* Preview Content */,
 				CEEF10FE2B58595B0034A850 /* Models */,
+				CEEF10D12B5855210034A850 /* Preview Content */,
 			);
 			path = CredProtector;
 			sourceTree = "<group>";

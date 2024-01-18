@@ -14,8 +14,8 @@ class RealmManager {
             saveCredential_toNew(categoryTextField: categoryTextField, name: name, login: login, password: password, realm: realm)
             saveCredential_toAll(name: name, login: login, password: password, realm: realm)
         } else {
-            saveCredential_toAll(name: name, login: login, password: password, realm: realm)
             saveCredential_toSelected(name: name, login: login, password: password, selectedCategory: selectedCategory, realm: realm)
+            saveCredential_toAll(name: name, login: login, password: password, realm: realm)
         }
         
     }
@@ -31,7 +31,7 @@ class RealmManager {
     }
     
     func saveCredential_toAll(name: String, login: String, password: String, realm: Realm) {
-        guard let allCategory = realm.objects(CredCategory.self).filter("title == %@", "All").first else {
+        guard let allCategory = realm.objects(CredCategory.self).filter("title == %@", "").first else {
             return
         }
         let newCred = Credential()

@@ -16,8 +16,7 @@ struct AddCredView: View {
     @State private var selectedCategory: String?
     @State private var categoryTextField = ""
     @ObservedResults(CredCategory.self, sortDescriptor: SortDescriptor(keyPath: "title")) var categories
-    @ObservedRealmObject var category: CredCategory
-    
+    @ObservedRealmObject var category: CredCategory    
     
     var body: some View {
         NavigationStack {

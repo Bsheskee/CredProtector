@@ -15,19 +15,14 @@ struct CredsListView: View {
     @ObservedResults(CredCategory.self, sortDescriptor: SortDescriptor(keyPath: "title")) var categories
     
     var items: [Credential] {
-        var result: [Credential] = []
-        if !selectedCategory.isEmpty {
-            if let category = categories.filter("title == %@", selectedCategory).first {
-                result = Array(category.credentials)
-                return result
-            }
-        } else {
-            result = Array(category.credentials)
-            return result
+        if selectedCategory == "All" || selectedCategory == "" {
+            return Array(category.credentials)
+        } else if let selectedCategory = categories.first(where: { $0.title == selectedCategory }) {
+            return Array(selectedCategory.credentials)
         }
-        return result
+        return []
     }
-    
+
     var body: some View {
         NavigationStack {
             CategoryFilterView(selectedCategory: $selectedCategory)
@@ -38,8 +33,8 @@ struct CredsListView: View {
                 ForEach(items) { item in
                     CredentialRow(cred: item)
                 }
-                .onMove(perform: $category.credentials.move)
-                .onDelete(perform: $category.credentials.remove)
+                .onMove(perform: $category.credentials.move) //restructure to custom move and custom edit if needed
+                .onDelete(perform: $category.credentials.remove) //restructure to custom delete and custom swipe
             }
             .navigationTitle("Credentials")
             .sheet(isPresented: $showAddCred) {

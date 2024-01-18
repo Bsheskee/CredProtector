@@ -23,7 +23,6 @@ struct CredentialRow: View {
 
 struct CredentialRow_Previews: PreviewProvider {
     static var previews: some View {
-        let dummyCategory = CredCategory(title: "category title")
         let dummyCredential = Credential()
         dummyCredential.login = "Dummy Login"
         dummyCredential.password = "Dummy Password"
