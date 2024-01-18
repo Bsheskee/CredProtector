@@ -43,7 +43,7 @@ struct AddCredView: View {
                             let realm = try Realm()
                             try realm.write {
                                 let realmManager = RealmManager()
-                                realmManager.saveCredential(categoryTextField: categoryTextField, name: name, login: login, password: password, category: category, realm: realm)
+                                realmManager.saveCredential(categoryTextField: categoryTextField, name: name, login: login, password: password, selectedCategory: selectedCategory ?? "All", realm: realm)
                             }
                             dismiss()
                         } catch {
